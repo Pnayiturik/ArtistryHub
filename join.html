@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth Section with Challenges Carousel</title>
+    <link rel="stylesheet" href="join.css">
+</head>
+<body>
+
+<section id="auth-section">
+    <!-- Carousel Section for Creative Challenges -->
+    <div class="carousel-background">
+        <div class="carousel">
+            <div class="carousel-item">Art Challenge: Paint your cityscape – Deadline: Dec 15</div>
+            <div class="carousel-item">Writing Challenge: Short Story of 500 words – Deadline: Nov 30</div>
+            <div class="carousel-item">Photography Contest: Capture "Motion" – Deadline: Dec 5</div>
+            <div class="carousel-item">Music Production: Remix Competition – Deadline: Dec 20</div>
+        </div>
+    </div>
+
+    <!-- Authentication Form Section -->
+    <div class="auth-container">
+        <div class="tab-container">
+            <button class="tab-button active" onclick="openTab('signin')">Sign In</button>
+            <button class="tab-button" onclick="openTab('signup')">Sign Up</button>
+        </div>
+        
+        <!-- Sign In Form -->
+        <div id="signin" class="auth-form">
+            <h2>Sign In</h2>
+            <form action="#" method="post">
+                <label for="signin-username">Username</label>
+                <input type="text" id="signin-username" name="username" placeholder="Enter your username" required>
+                
+                <label for="signin-password">Password</label>
+                <input type="password" id="signin-password" name="password" placeholder="Enter your password" required>
+                
+                <label for="signin-user-type">Select Role</label>
+                <select id="signin-user-type" name="user-type" required>
+                    <option value="artist">Artist</option>
+                    <option value="writer">Writer</option>
+                    <option value="photographer">Photographer</option>
+                    <option value="producer">Producer</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                <button type="submit">Sign In</button>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+            </form>
+        </div>
+
+        <!-- Sign Up Form -->
+        <div id="signup" class="auth-form" style="display: none;">
+            <h2>Sign Up</h2>
+            <form action="#" method="post">
+                <label for="signup-username">Username</label>
+                <input type="text" id="signup-username" name="username" placeholder="Choose a username" required>
+                
+                <label for="signup-password">Password</label>
+                <input type="password" id="signup-password" name="password" placeholder="Create a password" required>
+                
+                <label for="signup-user-type">Select Role</label>
+                <select id="signup-user-type" name="user-type" required>
+                    <option value="artist">Artist</option>
+                    <option value="writer">Writer</option>
+                    <option value="photographer">Photographer</option>
+                    <option value="producer">Producer</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<script src="join.js"></script>
+</body>
+</html>
