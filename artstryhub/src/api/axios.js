@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:8000'
+  baseURL: 'https://atristryhub.pythonanywhere.com'
 });
 
 // List of endpoints that don't require authentication
