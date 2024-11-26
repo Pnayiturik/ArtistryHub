@@ -7,7 +7,7 @@ import Events from "./pages/Events";
 import Collaborations from "./pages/Collaborations";
 import Gallery from "./pages/Gallery";
 import Login from "./pages/Login";
-import Forget from "./pages/forget";
+import Forget from "./pages/Forget";
 import AdminDashboard from './pages/Admin/Dashboard';
 import AdminEvents from './pages/Admin/Events';
 import AdminArtists from './pages/Admin/Artists';
