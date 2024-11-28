@@ -29,7 +29,7 @@ Make sure the following are installed on your machine:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/ArtistryHub.git
+   git clone https://github.com/Pnayiturik/ArtistryHub.git
    cd ArtistryHub
 cd backend
 python -m venv venv
